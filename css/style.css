@@ -19,12 +19,13 @@ body {
     clear: both;
 }
 
-header, nav, figure, footer {
+nav, figure, footer {
     margin-top: 30px;
 }
 
 .top-content header {
     height: 80px;
+    margin-top: 5px;
 }
 
 .top-content img {
@@ -75,9 +76,13 @@ figure {
     width: 52%;
 }
 
+main {
+    margin-top: 45px;
+}
+
 header>h1 {
     font-family: 'Rubik', sans-serif;
-    font-size: 36px;
+    font-size: 38px;
 }
 
 header>div:last-child {
@@ -85,7 +90,7 @@ header>div:last-child {
 }
 
 .floating-content {
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 .fl {
@@ -97,7 +102,7 @@ header>div:last-child {
 }
 
 .left, .right {
-    width: 25%;
+    width: 20%;
 }
 
 .left {
@@ -109,20 +114,40 @@ header>div:last-child {
 }
 
 .center {
-    width: 50%;
+    width: 60%;
     padding: 0 10px 0 10px;
 }
 
-.left-content, .center-content, .right-content {
-    height: 400px;
+.left-image, .center-image, .right-image {
+    height: 230px;
+    background-position: center;
+    background-size: cover;
 }
 
-.left-content, .right-content {
-    background-color: greenyellow;
+.left-image {
+    background-image: url('../img/img-1.jpg');
 }
 
-.center-content {
-    background-color: green;
+.right-image {
+    background-image: url('../img/img-3.jpg');
+}
+
+.center-image {
+    background-image: url('../img/banner-2.jpg');
+}
+
+.layer {
+    border-radius: 15px;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+section>h4 {
+    padding-top: 15px;
+}
+
+.floating-text {
+    padding-top: 10px;
 }
 
 footer {
@@ -130,8 +155,8 @@ footer {
     margin-bottom: 30px;
 }
 
-footer::after {
-    content: ' \2764';
+.footer-first-part::after {
+    content: ' \2764 ';
     color: red;
     font-size: 20px;
 }
