@@ -1,24 +1,29 @@
+/* reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* website font */
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* container size */
 .container {
     max-width: 1200px;
     margin: auto;
 }
 
+/* clearfix */
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
+/* created the same top margin for some sections */
 nav, figure, footer {
     margin-top: 30px;
 }
@@ -38,6 +43,7 @@ nav {
     height: 40px;
 }
 
+/* removed the dots from unordered list */
 nav>ul {
     list-style: none;
 }
@@ -50,6 +56,7 @@ nav li {
     line-height: 40px;
 }
 
+/* central image set as backround and son-div used for the text and the opacity */
 figure {
     height: 500px;
     background-image: url('../img/banner.jpg');
@@ -80,6 +87,7 @@ main {
     margin-top: 45px;
 }
 
+/* font family for central title */
 header>h1 {
     font-family: 'Rubik', sans-serif;
     font-size: 38px;
@@ -89,6 +97,7 @@ header>div:last-child {
     color: #bcbcbc;
 }
 
+/* dimension and padding of the floating elements */
 .floating-content {
     padding-top: 30px;
 }
@@ -118,6 +127,7 @@ header>div:last-child {
     padding: 0 10px 0 10px;
 }
 
+/* images for the three columns */
 .left-image, .center-image, .right-image {
     height: 230px;
     background-position: center;
@@ -136,6 +146,7 @@ header>div:last-child {
     background-image: url('../img/banner-2.jpg');
 }
 
+/* used this empty div just to create an overlay on the three images */
 .layer {
     border-radius: 15px;
     height: 100%;
@@ -150,6 +161,7 @@ section>h4 {
     padding-top: 10px;
 }
 
+/* footer characteristic */
 footer {
     text-align: center;
     margin-bottom: 30px;
