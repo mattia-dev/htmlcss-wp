@@ -23,7 +23,7 @@ header, nav, figure, footer {
     margin-top: 30px;
 }
 
-header:first-child {
+.top-content header {
     height: 80px;
 }
 
@@ -75,8 +75,13 @@ figure {
     width: 52%;
 }
 
-main>header {
-    background-color: yellow;
+header>h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 36px;
+}
+
+header>div:last-child {
+    color: #bcbcbc;
 }
 
 .floating-content {
@@ -121,7 +126,12 @@ main>header {
 }
 
 footer {
-    height: 50px;
-    background-color: goldenrod;
+    text-align: center;
     margin-bottom: 30px;
+}
+
+footer::after {
+    content: ' \2764';
+    color: red;
+    font-size: 20px;
 }
