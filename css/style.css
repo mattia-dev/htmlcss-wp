@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -20,16 +24,29 @@ header, nav, figure, footer {
 }
 
 header:first-child {
-    height: 100px;
+    height: 80px;
 }
 
-.top-content>header {
-    background-color: red;
+.top-content img {
+    height: 100%;
+    padding-right: 25px;
+    border-right: 1px solid lightgrey;
 }
 
 nav {
-    height: 50px;
-    background-color: orange;
+    height: 40px;
+}
+
+nav>ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 18px;
+    color: #bcbcbc;
+    padding-right: 20px;
+    line-height: 40px;
 }
 
 figure {
