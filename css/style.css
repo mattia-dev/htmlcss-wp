@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header, nav, figure, footer {
+    margin-top: 30px;
+}
+
+header:first-child {
+    height: 100px;
+}
+
+.top-content>header {
+    background-color: red;
+}
+
+nav {
+    height: 50px;
+    background-color: orange;
+}
+
+figure {
+    height: 400px;
+    background-color: blue;
+}
+
+main>header {
+    background-color: yellow;
+}
+
+.floating-content {
+    padding-top: 25px;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.left, .right {
+    width: 25%;
+}
+
+.left {
+    padding-right: 10px;
+}
+
+.right {
+    padding-left: 10px;
+}
+
+.center {
+    width: 50%;
+    padding: 0 10px 0 10px;
+}
+
+.left-content, .center-content, .right-content {
+    height: 400px;
+}
+
+.left-content, .right-content {
+    background-color: greenyellow;
+}
+
+.center-content {
+    background-color: green;
+}
+
+footer {
+    height: 50px;
+    background-color: goldenrod;
+    margin-bottom: 30px;
+}
